@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="1116.9230769230769" y="-85.308056872037909"/>
         </scene>
-        <!--Info List View Controller-->
+        <!--Person Info-->
         <scene sceneID="Q56-9W-fTR">
             <objects>
                 <viewController id="ZPH-92-NCk" customClass="InfoListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                         <viewLayoutGuide key="safeArea" id="JKG-c5-qhy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qOo-de-RUh"/>
+                    <navigationItem key="navigationItem" title="Person Info" id="qOo-de-RUh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TwF-D5-qKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,8 +61,8 @@
         <scene sceneID="wXL-wk-NXN">
             <objects>
                 <navigationController id="y33-C6-fc2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4vr-wB-KiV">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="4vr-wB-KiV">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
