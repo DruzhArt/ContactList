@@ -41,6 +41,22 @@
             </objects>
             <point key="canvasLocation" x="1116.9230769230769" y="-85.308056872037909"/>
         </scene>
+        <!--Contacts-->
+        <scene sceneID="0dv-L9-kiK">
+            <objects>
+                <viewController id="7RP-ZV-ev3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNj-dC-MfR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dbJ-pT-TsN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="kPl-e8-Bah"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPc-x1-mz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="650"/>
+        </scene>
         <!--Person Info-->
         <scene sceneID="Q56-9W-fTR">
             <objects>
@@ -80,11 +96,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Q2D-98-8pt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aa5-l0-PRO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="cBK-Bd-fKH" kind="relationship" relationship="viewControllers" id="sGz-KS-tF0"/>
+                        <segue destination="7RP-ZV-ev3" kind="relationship" relationship="viewControllers" id="fuC-g1-snm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiU-nv-GX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -94,6 +112,7 @@
     </scenes>
     <resources>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
