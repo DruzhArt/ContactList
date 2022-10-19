@@ -14,6 +14,7 @@
 		8BEFA22829006557007AC135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFA22729006557007AC135 /* Assets.xcassets */; };
 		8BEFA22B29006557007AC135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEFA22929006557007AC135 /* LaunchScreen.storyboard */; };
 		8BEFA2332900680A007AC135 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFA2322900680A007AC135 /* Contacts.swift */; };
+		8BEFA2352900822C007AC135 /* InfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEFA2342900822C007AC135 /* InfoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8BEFA22A29006557007AC135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BEFA22C29006557007AC135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BEFA2322900680A007AC135 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		8BEFA2342900822C007AC135 /* InfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				8BEFA22029006556007AC135 /* SceneDelegate.swift */,
 				8BEFA22229006556007AC135 /* ContactListViewController.swift */,
 				8BEFA22429006556007AC135 /* Main.storyboard */,
+				8BEFA2342900822C007AC135 /* InfoListViewController.swift */,
 				8BEFA2322900680A007AC135 /* Contacts.swift */,
 				8BEFA22729006557007AC135 /* Assets.xcassets */,
 				8BEFA22929006557007AC135 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEFA2352900822C007AC135 /* InfoListViewController.swift in Sources */,
 				8BEFA2332900680A007AC135 /* Contacts.swift in Sources */,
 				8BEFA22329006556007AC135 /* ContactListViewController.swift in Sources */,
 				8BEFA21F29006556007AC135 /* AppDelegate.swift in Sources */,

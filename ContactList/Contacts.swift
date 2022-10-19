@@ -10,10 +10,6 @@ struct Person {
     let surname: String
     let email: String
     let phone: String
-    
-    var fullname: String {
-        "\(name) \(surname)"
-    }
 }
 
 class DataManager {
@@ -50,4 +46,16 @@ class DataManager {
         "world@gmail.com",
         "fifa@gmail.com"
     ]
+    let phones: [String] = [
+        "892167",
+        "999087",
+        "678543",
+        "789456",
+        "123456",
+        "567535",
+        "879837",
+        "565328",
+        "098783"
+    ]
 }
+
