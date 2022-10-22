@@ -27,7 +27,7 @@ class ContactListViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathsForSelectedRows {
+        if let indexPath = tableView.indexPathForSelectedRow {
             guard let detailVC = segue.destination as? InfoListViewController else { return }
             detailVC.person = persons[indexPath.row]
         }
