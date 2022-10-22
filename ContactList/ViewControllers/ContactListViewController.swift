@@ -9,26 +9,28 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     
-//    private var contactLists = DataManager()
-//    let first = contactLists.names.randomElement()
+    var persons: [Person] = []
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.rowHeight = 80
-    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        9
+        persons.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "List", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let person = persons[indexPath.row]
+        
+        content.text = person.fullName
+        cell.contentConfiguration = content
+        
         return cell
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let infoVC = segue.destination as? InfoListViewController
-        infoVC?.person = sender as? Person
+        if let indexPath = tableView.indexPathsForSelectedRows {
+            guard let detailVC = segue.destination as? InfoListViewController else { return }
+            detailVC.person = persons[indexPath.row]
+        }
     }
 
 }

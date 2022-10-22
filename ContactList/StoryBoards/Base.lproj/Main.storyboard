@@ -57,17 +57,45 @@
             </objects>
             <point key="canvasLocation" x="1023" y="306"/>
         </scene>
-        <!--Person Info-->
+        <!--Info List View Controller-->
         <scene sceneID="Q56-9W-fTR">
             <objects>
                 <viewController id="ZPH-92-NCk" customClass="InfoListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Me8-jE-oL0">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="g3H-z4-LYq">
+                                <rect key="frame" x="16" y="143" width="358" height="54.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-xh-7cB">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQy-Ny-eWP">
+                                        <rect key="frame" x="0.0" y="34.333333333333343" width="358" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JKG-c5-qhy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g3H-z4-LYq" firstAttribute="top" secondItem="JKG-c5-qhy" secondAttribute="top" id="1rd-lj-UUB"/>
+                            <constraint firstItem="g3H-z4-LYq" firstAttribute="leading" secondItem="JKG-c5-qhy" secondAttribute="leading" constant="16" id="8sN-Wt-gSm"/>
+                            <constraint firstItem="JKG-c5-qhy" firstAttribute="trailing" secondItem="g3H-z4-LYq" secondAttribute="trailing" constant="16" id="9We-EZ-fbP"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Person Info" id="qOo-de-RUh"/>
+                    <navigationItem key="navigationItem" id="qOo-de-RUh"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="XQy-Ny-eWP" id="bAP-z0-r0J"/>
+                        <outlet property="phoneNumberLabel" destination="bUg-xh-7cB" id="CX2-SY-WBb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TwF-D5-qKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,12 +117,12 @@
             </objects>
             <point key="canvasLocation" x="-720" y="-85"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="W8a-jG-qOF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Vqd-ST-W9W" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Vqd-ST-W9W" userLabel="Tab Bar View Controller" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Q2D-98-8pt"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="Q2D-98-8pt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aa5-l0-PRO">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
